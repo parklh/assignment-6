@@ -57,7 +57,7 @@ p {
 
 .landing {
 	display: flex;
-	flex-wrap: row wrap;
+	align-items: center;
 	background-image: url("images/landing-bear.png");
 	height:100vh;
 	margin: 0;
@@ -76,10 +76,11 @@ p {
 
 .scroll {
 	width: 100%;
+	position: absolute;
+	bottom: 30px;
+	left: 0;
 	text-align: center;
 	color: #FFF;
-	align-items: flex-end;
-	vertical-align: middle;
 }
 
 .bearfacts {
@@ -115,8 +116,8 @@ p {
 	z-index:;
 }
 
-/*Flexbox display*/
+/*Flexbox display
 @media all and (min-width: 800px) {
   .heading    { order: 1; }
   .scroll  { order: 2; }
-}
+}*/
