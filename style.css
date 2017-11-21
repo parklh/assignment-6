@@ -1,0 +1,122 @@
+html,
+body {
+ 	height:100%;
+ 	margin: 0;
+ 	background-color: #fff;
+ 	color: #000;
+ 	font-family: 'Poppins', sans-serif;
+ 	font-weight: 400;
+ 	font-size: 14px;
+ 	line-height: 23px;
+}
+
+h1 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 60px;
+	line-height: 75px;
+	color: #fff;
+	margin: 0;
+}
+
+h2 {
+	font-family:'Abril Fatface', sans-serif;
+	font-size: 48px;
+}
+
+h3 {
+	font-family:'Poppins', sans-serif;
+	font-size: 18px;
+	font-weight:700;
+}
+
+p {
+	font-family:'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.site-container {
+	width: 100%;
+	margin: 0;
+}
+
+.container-fluid {
+	width: calc(100% - 100px);
+	float: right;
+	margin: 0;
+}
+
+#sidebar {
+	position: fixed;
+	z-index: 1;
+	border-right:1px #000;
+	float: left;
+	width:100px;
+	height: 100%;
+}
+
+.landing {
+	display: flex;
+	flex-wrap: row wrap;
+	background-image: url("images/landing-bear.png");
+	height:100vh;
+	margin: 0;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.heading {
+	width: 300px;
+	margin: 0;
+	align-items: center;
+	float: right;
+}
+
+.scroll {
+	width: 100%;
+	text-align: center;
+	color: #FFF;
+	align-items: flex-end;
+	vertical-align: middle;
+}
+
+.bearfacts {
+	height: 100vh;
+	background-color: #FFF;
+	position: relative;
+}
+
+.bearimage {
+	background-image: url("images/placebear.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.content {
+	background-color: #FFF;
+	z-index: 1;
+}
+
+.border {
+	width: 30px;
+	height: 2px;
+	color: #000;
+}
+
+.bold {
+	font-weight: 700;
+	margin-right:10px;
+}
+
+.copy {
+	background-color: #fff;
+	z-index:;
+}
+
+/*Flexbox display*/
+@media all and (min-width: 800px) {
+  .heading    { order: 1; }
+  .scroll  { order: 2; }
+}
