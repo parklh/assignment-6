@@ -1,8 +1,11 @@
-function hideSideBar() {
-	var e = document.getElementById('landing');
-	
-	if(e.style.display == 'block')
-		e.style.display = 'none';
-	else 
-		e.style.display = 'block';
+function hideNav() {
+	var x = document.getElementById('landing')
+
+	if (x = 'landing') {
+		document.getElementById('sidebar').style.display = 'none'
+	}
+	else {
+		document.getElementById('sidebar').style.display = 'block'
+	}
+
 }

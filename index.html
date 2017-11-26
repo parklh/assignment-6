@@ -8,9 +8,6 @@
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.css' rel='stylesheet' />
 
-    <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
-
-
     <title>THE SPECTACLE BEAR</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
@@ -52,7 +49,7 @@
           <div class="glasses-animation">
             <object id="glasses" type="image/svg+xml" data="images/glasses.svg"></object>
               <script>
-                new Vivus('glasses', {duration: 2900}, myCallback);
+                new Vivus('glasses', {duration: 200}, myCallback);
               </script>
           </div>
           <div class="scroll">
@@ -91,7 +88,7 @@
           <div class="paws-animation">
             <object id="paws" type="image/svg+xml" data="images/paws.svg"></object>
               <script>
-                new Vivus('paws', {duration: 2900}, myCallback);
+                new Vivus('paws', {duration: 200});
               </script>
           </div>
     </div>
@@ -129,9 +126,9 @@
     <div class="row">
       <div class="behavior-and-diet">
          <div class="hive-animation">
-          <object id="hive" type="image/svg+xml" data="images/hive.svg"></object>
+          <object id="hive" type="image/svg+xml" data="images/hive_animated.svg"></object>
             <script>
-              new Vivus('hive', {duration: 2900}, myCallback);
+              new Vivus('hive', {duration: 200}, inViewport);
             </script>
           </div>
         <div class="content behavior col-md-4 offset-md-1">
@@ -177,7 +174,7 @@
         <div class="outline-animation col-md-4 offset-md-2 align-self-start">
             <object id="outline" type="image/svg+xml" data="images/outline.svg"></object>
               <script>
-                new Vivus('outline', {duration: 2900}, myCallback);
+                new Vivus('outline', {duration: 200});
               </script>
         </div>
         <div class="content col-md-4 offset-md-1 align-self-end">
@@ -213,6 +210,8 @@
 
     <!--Plugin Javascript for scrolling-->
     <script src="js/scrolling-nav.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
 
   </body>
 </html>
