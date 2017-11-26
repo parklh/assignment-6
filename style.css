@@ -198,6 +198,7 @@ p {
 }
 
 .conservation {
+	display:flex;
 	background-color: #FFF;
 	position: relative;
 	z-index: 0;
@@ -205,9 +206,7 @@ p {
 
 .outline-animation {
 	z-index:1;
-	position: absolute;
-	float:right;
-	margin-top: -200px; 
+	position: absolute; 
 }
 
 .andesimage {
