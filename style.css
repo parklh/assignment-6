@@ -41,7 +41,7 @@ p {
 }
 
 .container-fluid {
-	width: calc(100% - 100px);
+	width: calc(100% - 85px);
 	float: right;
 	margin: 0;
 }
@@ -51,7 +51,7 @@ p {
 	z-index: 1;
 	border-right:1px #000;
 	float: left;
-	width:100px;
+	width:85px;
 	height: 100%;
 }
 
@@ -69,21 +69,28 @@ p {
 
 .heading {
 	width: 300px;
-	margin: 0;
 	align-items: center;
 	float: right;
+	padding: 0;
+}
+
+.glasses-animation {
+	float: right;
+	margin: -200px 0 0 50px;
 }
 
 .scroll {
 	width: 100%;
 	position: absolute;
-	bottom: 30px;
+	bottom: 20px;
 	left: 0;
 	text-align: center;
 	color: #FFF;
 }
 
 .bearfacts {
+	display: flex;
+	align-items: center;
 	height: 100vh;
 	background-color: #FFF;
 	position: relative;
@@ -93,17 +100,28 @@ p {
 	background-image: url("images/placebear.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+	height: 530px;
+	position: relative;
 }
 
 .content {
 	background-color: #FFF;
-	z-index: 1;
+	padding-top:15px;
+}
+
+.content.facts {
+	margin: 90px 0 0 -60px;
+}
+
+.paws-animation {
+	align-self: flex-end;
+	margin-bottom: 30px;
 }
 
 .border {
 	width: 30px;
 	height: 2px;
-	color: #000;
+	background: #000;
 }
 
 .bold {
@@ -113,9 +131,92 @@ p {
 
 .copy {
 	background-color: #fff;
-	z-index:;
+	z-index:1;
 }
 
+#map {
+	width: 100vw;
+	height: 100vh;
+	z-index:0;
+	position: absolute;
+}
+
+.location {
+	display: flex;
+	align-items: center;
+	z-index: 1;
+	width: 100%;
+	height: 100vh;
+	background-color: #FFF;
+	position: relative;
+}
+
+.content.nobg {
+	background-color: transparent;
+}
+
+.behavior-and-diet {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	background-color: #FFF;
+	position: relative;
+}
+
+.hive-animation {
+	z-index:0;
+	position: absolute;
+	float:right;
+}
+
+.content.behavior {
+	z-index: 1;
+}
+
+.reproduction {
+	display: flex;
+	align-items: flex-end;
+	height: 100vh;
+	background-color: #FFF;
+	position: relative;	
+	background-image: linear-gradient(133deg, rgba(0,0,0,0.00) 35%, #000000 100%), url("images/bearcub.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	color: #FFF;
+}
+
+.content.cubs {
+	margin-bottom: 60px;
+	background-color: transparent;
+}
+
+.conservation {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	background-color: #FFF;
+	position: relative;
+	z-index: 0;
+	margin-bottom: 60px;
+}
+
+.outline-animation {
+	z-index:1;
+	position: absolute;
+	float:right;
+	align-self: flex-end;
+	margin-top: -200px; 
+}
+
+.andesimage {
+	background-image: url("images/andes.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 530px;
+}
 /*Flexbox display
 @media all and (min-width: 800px) {
   .heading    { order: 1; }

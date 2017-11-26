@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" src='img/favicon.ico'>
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins:400,700" rel="stylesheet">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.css' rel='stylesheet' />
+
+    <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+
 
     <title>THE SPECTACLE BEAR</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -20,20 +25,26 @@
      <div class="row">
         <div class="landing col-md-12">
           <div class="heading col-md-4 offset-md-1">
-            <h1>the spectacled bear</h1>
+            <h1>The <BR>Spectacled <BR>Bear</h1>
+          </div>
+          <div class="glasses-animation">
+            <object id="glasses" type="image/svg+xml" data="images/glasses.svg"></object>
+              <script>
+                new Vivus('glasses', {duration: 2900}, myCallback);
+              </script>
           </div>
           <div class="scroll">
             scroll to learn more 
             <br>
-            <img src="images/arrow-down.png">
+            <img src="images/arrow-down.png" vspace="10">
           </div>
       </div>
     </div>
     <div class="row">
         <div class="bearfacts">
-          <div class="bearimage col-md-5">
+          <div class="bearimage col-md-5 offset-md-1">
           </div>
-          <div class="content col-md-5 float-right">
+          <div class="content facts col-md-5">
             <h3>BEAR FACTS</h3>
             <div class="border"></div>
             <div class="section-heading">
@@ -52,62 +63,105 @@
             <p><span class="bold">Size</span>5 to 6 ft</p>
             <p><span class="bold">Weight</span>220 to 340 lbs (males)</p>
          </div>
+          <div class="paws-animation">
+            <object id="paws" type="image/svg+xml" data="images/paws.svg"></object>
+              <script>
+                new Vivus('paws', {duration: 2900}, myCallback);
+              </script>
+          </div>
     </div>
-    <div class="location">
-      <div class="content">
-        <h3>LOCATION</h3>
-        <div class="border"></div>
-        <div class="section-heading">
-          <h2>South America</h2>
-        </div>
-        <div class="copy">
-        <p>The diminutive spectacled bear makes its home in the dense Andean jungles of South America, and it has the distinction of being the continent’s only bear.</p>
+    <div class="row">
+      <div class="location">
+      <div id='map'></div>
+        <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoicGFya2xoIiwiYSI6ImNqOWkwYnJrczNmYWgycXM0dnFxM2xrMmsifQ.ht37-qzhJuttsSImu7PXEA';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            center: [-70.145390,-19.510159],
+            zoom: 4.7,
+            interactive: false,
+            style: 'mapbox://styles/mapbox/outdoors-v9'
+        });
+        </script>
+        <div class="content nobg col-md-4 offset-md-1">
+          <h3>LOCATION</h3>
+          <div class="border"></div>
+          <div class="section-heading">
+            <h2>South America</h2>
+          </div>
+          <div class="copy2">
+          <p>The diminutive spectacled bear makes its home in the dense Andean jungles of South America, and it has the distinction of being the continent’s only bear.</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="behavior">
-      <div class="content">
-        <h3>BEHAVIOR & DIET</h3>
-        <div class="border"></div>
-        <div class="section-heading">
-          <h2>Bear necessities</h2>
+    <div class="row">
+      <div class="behavior-and-diet">
+         <div class="hive-animation">
+          <object id="hive" type="image/svg+xml" data="images/hive.svg"></object>
+            <script>
+              new Vivus('hive', {duration: 2900}, myCallback);
+            </script>
+          </div>
+        <div class="content behavior col-md-4 offset-md-1">
+          <h3>BEHAVIOR & DIET</h3>
+          <div class="border"></div>
+          <div class="section-heading">
+            <h2>Bear necessities</h2>
+          </div>
+          <div class="copy">
+          <p>Intensely shy bears, they prefer the lush, isolated cloud forests on the slopes of the Andes, climbing as high as 14,000 feet. They will descend to search for food though, and have been seen in widely differing habitats, from rain forests, to steppe lands, to coastal deserts.
+          <br>
+          <br>
+          Spectacled bears are generally nocturnal and are primarily vegetarian, harvesting fruit, berries, cacti, and honey. Highly agile climbers, they have been known to sit in a tree for days on a platform made of broken branches, waiting for fruit to ripen. They have extremely strong jaws and wide, flat molars to chew tough vegetation such as tree bark and orchid bulbs. Occasionally they will supplement their diet with meat, taking small rodents, birds, insects, and even small cows, making them the largest carnivores in South America.</p>
+          </div>
         </div>
-        <div class="copy">
-        <p>Intensely shy bears, they prefer the lush, isolated cloud forests on the slopes of the Andes, climbing as high as 14,000 feet. They will descend to search for food though, and have been seen in widely differing habitats, from rain forests, to steppe lands, to coastal deserts.
+        <div class="bearimage2 col-md-4 offset-md-2">
+        <img src="images/bear-hive.png"/>
+        </div>
+      </div>
+    </div>
 
-        Spectacled bears are generally nocturnal and are primarily vegetarian, harvesting fruit, berries, cacti, and honey. Highly agile climbers, they have been known to sit in a tree for days on a platform made of broken branches, waiting for fruit to ripen. They have extremely strong jaws and wide, flat molars to chew tough vegetation such as tree bark and orchid bulbs. Occasionally they will supplement their diet with meat, taking small rodents, birds, insects, and even small cows, making them the largest carnivores in South America.</p>
+    <div class="row">
+      <div class="reproduction">
+        <div class="content cubs col-md-4 offset-md-7">
+          <h3>REPRODUCTION</h3>
+          <div class="border"></div>
+          <div class="section-heading">
+            <h2>Bear cubs</h2>
+          </div>
+          <div class="copy2">
+          <p>Solitary animals, mature spectacled bears are normally seen together only during mating season. Females usually give birth to one or two small, helpless cubs, which are mobile after a month, but remain with the mother for up to eight months, often hitching a ride on the mother’s back.</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="reproduction">
-      <div class="content">
-        <h3>REPRODUCTION</h3>
-        <div class="border"></div>
-        <div class="section-heading">
-          <h2>Bear cubs</h2>
+    <div class="row">
+      <div class="conservation">
+        <div class="content col-md-4 offset-md-1">
+          <div class="outline-animation">
+            <object id="outline" type="image/svg+xml" data="images/outline.svg"></object>
+              <script>
+                new Vivus('outline', {duration: 2900}, myCallback);
+              </script>
+          </div>
+          <h3>CONSERVATION</h3>
+          <div class="border"></div>
+          <div class="section-heading">
+            <h2>Threats to survival</h2>
+          </div>
+          <div class="copy">
+          <p>Spectacled bears populations suffer primarily from destruction and fragmentation of their habitat. Poachers also hunt them for their meat and body parts, and farmers kill them as agricultural pests.
+          </p>
+          </div>
         </div>
-        <div class="copy">
-        <p>Solitary animals, mature spectacled bears are normally seen together only during mating season. Females usually give birth to one or two small, helpless cubs, which are mobile after a month, but remain with the mother for up to eight months, often hitching a ride on the mother’s back.</p>
-        </div>
+      <div class="andesimage col-md-5 offset-md-1">
+      </div>
       </div>
     </div>
-
-    <div class="conservation">
-      <div class="content">
-        <h3>CONSERVATION</h3>
-        <div class="border"></div>
-        <div class="section-heading">
-          <h2>Threats to survival</h2>
-        </div>
-        <div class="copy">
-        <p>Spectacled bears populations suffer primarily from destruction and fragmentation of their habitat. Poachers also hunt them for their meat and body parts, and farmers kill them as agricultural pests.
-        </p>
-        </div>
-      </div>
-    </div>
-</div>
+  </div>
 </div>
 
     <!-- Bootstrap core JavaScript
@@ -120,5 +174,10 @@
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
     
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="skrollr.min.js"></script>
+    <script type="text/javascript">
+    var s = skrollr.init();
+    </script>
   </body>
 </html>
