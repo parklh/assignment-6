@@ -1,5 +1,8 @@
 function hideSideBar() {
-	var div = document.getElementByID('sidebar');
-
-	if(url.search('#landing'))
+	var e = document.getElementById('landing');
+	
+	if(e.style.display == 'block')
+		e.style.display = 'none';
+	else 
+		e.style.display = 'block';
 }
