@@ -35,22 +35,30 @@ p {
 	font-weight: 400;
 }
 
+li {
+	display: block;
+	margin: 0 auto;
+}
+
+.navbar {
+	margin-left:-15px;
+}
+
 .site-container {
 	width: 100%;
 	margin: 0;
 }
 
 .container-fluid {
-	width: calc(100% - 85px);
 	float: right;
 	margin: 0;
 }
 
 #sidebar {
+	display: flex;
+	align-items: center;
 	position: fixed;
 	z-index: 1;
-	border-right:1px #000;
-	float: left;
 	width:85px;
 	height: 100%;
 }
