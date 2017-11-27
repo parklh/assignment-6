@@ -83,11 +83,9 @@
             <p><span class="bold">Size</span>5 to 6 ft</p>
             <p><span class="bold">Weight</span>220 to 340 lbs (males)</p>
          </div>
-          <!--test out
           <div class="prints-animation">
           <object id="prints" type="image/svg+xml" data="images/prints.svg"></object>
           </div>
-        -->
     </div>
   </section>
 
@@ -165,11 +163,9 @@
   <section id="conservation">
     <div class="row" style="height:100vh">
       <div class="conservation col-md-12 align-self-center">
-        <!--test out
         <div class="outline-animation col-md-4 offset-md-2 align-self-start">
             <object id="outline" type="image/svg+xml" data="images/outline.svg"></object>
         </div>
-      -->
         <div class="content col-md-4 offset-md-1 align-self-end" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
           <h3>CONSERVATION</h3>
           <div class="dash"></div>
@@ -207,7 +203,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.3/vivus.min.js"></script>
     <script>
         var glassesAnimation = new Vivus('glasses', {duration: 200, start: 'inViewport'});
-        /*var printsAnimation = new Vivus('prints', {duration: 150, start: 'inViewport'});*/
+        printsAnimation = new Vivus('prints', {duration: 150, start: 'inViewport'});
         var hiveAnimation = new Vivus('hive', {duration: 200, start: 'inViewport'});
         var outlineAnimation = new Vivus('outline', {duration: 200, start: 'inViewport'});
     </script>
