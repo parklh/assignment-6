@@ -15,14 +15,12 @@
 
   </head>
 
-<body>
+<body data-spy="scroll" data-target=".sidebar">
 <div class="site-container">
   <div class="container-fluid">
-  <!---This div just holds the name at the top-->
-    <div id="sideName"></div>
   <!--This is the main navigation-->
-    <div id="sidebar">
-      <ul class="navbar">
+    <nav id="sidebar">
+      <ul class="navbar nav-pills">
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#bearfacts"><img src="images/icon-glasses.svg"></a>
         </li>
@@ -39,7 +37,8 @@
           <a class="nav-link js-scroll-trigger" href="#conservation"><img src="images/icon-bear.svg"></a>
         </li> 
       </ul>                  
-    </div>
+    </nav>
+    
     <section id="landing">
      <div class="row">
         <div class="landing col-md-12">

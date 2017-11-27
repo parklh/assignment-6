@@ -87,7 +87,7 @@ li {
 .glasses-animation {
 	overflow-x: hidden;
 	float: right;
-	margin: -200px 15px 0 100px;
+	margin: -200px -15px 0 100px;
 }
 
 .scroll {
@@ -128,7 +128,7 @@ li {
 	align-self: flex-end;
 	margin-bottom: 30px;
 	overflow-x:hidden;
-	margin: 0 15px 0 0;
+	margin: 0 -15px 0 0;
 }
 
 .dash {
