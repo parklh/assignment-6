@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="727px" height="779px" viewBox="0 0 727 779" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="698px" height="748px" viewBox="0 0 698 748" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
     <title>Group</title>
     <desc>Created with Sketch.</desc>
@@ -7,13 +7,15 @@
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard" transform="translate(-61.000000, -27.000000)" stroke-width="2" stroke="#000000">
             <g id="Group" transform="translate(62.000000, 29.000000)">
-                <polygon id="Polygon-3" points="103.5 0 207 59.75 207 179.25 103.5 239 3.55271368e-14 179.25 -2.84217094e-14 59.75"></polygon>
-                <polygon id="Polygon-3-Copy-4" points="620.5 179 724 238.75 724 358.25 620.5 418 517 358.25 517 238.75"></polygon>
-                <polygon id="Polygon-3-Copy" points="207.5 179 311 238.75 311 358.25 207.5 418 104 358.25 104 238.75"></polygon>
-                <polygon id="Polygon-3-Copy-5" points="517.5 358 621 417.75 621 537.25 517.5 597 414 537.25 414 417.75"></polygon>
-                <polygon id="Polygon-3-Copy-7" points="621.5 536 725 595.75 725 715.25 621.5 775 518 715.25 518 595.75"></polygon>
-                <polygon id="Polygon-3-Copy-6" points="310.5 358 414 417.75 414 537.25 310.5 597 207 537.25 207 417.75"></polygon>
-                <polygon id="Polygon-3-Copy-8" points="104.5 358 208 417.75 208 537.25 104.5 597 1 537.25 1 417.75"></polygon>
+                <polygon id="Polygon-3" points="99.5 0 199 57.25 199 171.75 99.5 229 4.97379915e-14 171.75 -1.42108547e-14 57.25"></polygon>
+                <polygon id="Polygon-3-Copy-4" points="595.5 172 695 229.25 695 343.75 595.5 401 496 343.75 496 229.25"></polygon>
+                <polygon id="Polygon-3-Copy" points="199.5 172 299 229.25 299 343.75 199.5 401 100 343.75 100 229.25"></polygon>
+                <polygon id="Polygon-3-Copy-2" points="396.5 172 496 229.25 496 343.75 396.5 401 297 343.75 297 229.25"></polygon>
+                <polygon id="Polygon-3-Copy-3" points="497.5 0 597 57.25 597 171.75 497.5 229 398 171.75 398 57.25"></polygon>
+                <polygon id="Polygon-3-Copy-5" points="496.5 344 596 401.25 596 515.75 496.5 573 397 515.75 397 401.25"></polygon>
+                <polygon id="Polygon-3-Copy-7" points="596.5 515 696 572.25 696 686.75 596.5 744 497 686.75 497 572.25"></polygon>
+                <polygon id="Polygon-3-Copy-6" points="298.5 344 398 401.25 398 515.75 298.5 573 199 515.75 199 401.25"></polygon>
+                <polygon id="Polygon-3-Copy-8" points="100.5 344 200 401.25 200 515.75 100.5 573 1 515.75 1 401.25"></polygon>
             </g>
         </g>
     </g>
