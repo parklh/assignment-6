@@ -19,8 +19,8 @@
 <div class="site-container">
   <div class="container-fluid">
   <!--This is the main navigation-->
-    <nav id="sidebar">
-      <ul class="navbar nav-pills">
+    <nav class="sidebar">
+      <ul class="navbar">
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#bearfacts"><img src="images/icon-glasses.svg"></a>
         </li>
@@ -60,9 +60,9 @@
     <section id="bearfacts">
     <div class="row">
         <div class="bearfacts">
-          <div class="bearimage col-md-5 offset-md-1">
+          <div class="bearimage fade-in one col-md-5 offset-md-1">
           </div>
-          <div class="content facts col-md-5">
+          <div class="content facts fade-in two col-md-5">
             <h3>BEAR FACTS</h3>
             <div class="dash"></div>
             <div class="section-heading">
@@ -201,7 +201,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.3/vivus.min.js"></script>
     <script>
         var glassesAnimation = new Vivus('glasses', {duration: 200, start: 'inViewport'});
-        var printsAnimation = new Vivus('prints', {duration: 200, start: 'inViewport'});
+        var printsAnimation = new Vivus('prints', {duration: 180, start: 'inViewport'});
         var hiveAnimation = new Vivus('hive', {duration: 200, start: 'inViewport'});
         var outlineAnimation = new Vivus('outline', {duration: 200, start: 'inViewport'});
     </script> 
