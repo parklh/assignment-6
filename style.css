@@ -228,8 +228,3 @@ li {
 	background-size: cover;
 	height: 530px;
 }
-/*Flexbox display
-@media all and (min-width: 800px) {
-  .heading    { order: 1; }
-  .scroll  { order: 2; }
-}*/
