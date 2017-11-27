@@ -11,6 +11,9 @@
     <title>THE SPECTACLE BEAR</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+    <link href="aos.css" rel="stylesheet">
+
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   </head>
 
 <body data-spy="scroll" data-target=".sidebar">
@@ -58,9 +61,9 @@
     <section id="bearfacts">
     <div class="row">
         <div class="bearfacts">
-          <div class="bearimage col-md-5 offset-md-1" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+          <div class="bearimage col-md-5 offset-md-1" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
           </div>
-          <div class="content facts fade-in two col-md-5">
+          <div class="content facts col-md-5" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
             <h3>BEAR FACTS</h3>
             <div class="dash"></div>
             <div class="section-heading">
@@ -132,7 +135,7 @@
           Spectacled bears are generally nocturnal and are primarily vegetarian, harvesting fruit, berries, cacti, and honey. Highly agile climbers, they have been known to sit in a tree for days on a platform made of broken branches, waiting for fruit to ripen. They have extremely strong jaws and wide, flat molars to chew tough vegetation such as tree bark and orchid bulbs. Occasionally they will supplement their diet with meat, taking small rodents, birds, insects, and even small cows, making them the largest carnivores in South America.</p>
           </div>
         </div>
-        <div class="bearimage2 col-md-4 offset-md-2">
+        <div class="bearimage2 col-md-4 offset-md-2" data-aos="fade-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
         <img src="images/bear-hive.png"/>
         </div>
       </div>
@@ -162,7 +165,7 @@
         <div class="outline-animation col-md-4 offset-md-2 align-self-start">
             <object id="outline" type="image/svg+xml" data="images/outline.svg"></object>
         </div>
-        <div class="content col-md-4 offset-md-1 align-self-end">
+        <div class="content col-md-4 offset-md-1 align-self-end" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
           <h3>CONSERVATION</h3>
           <div class="dash"></div>
           <div class="section-heading">
@@ -173,7 +176,7 @@
           </p>
           </div>
         </div>
-      <div class="andesimage col-md-5 offset-md-1 align-self-end"></div>
+      <div class="andesimage col-md-5 offset-md-1 align-self-end" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"></div>
       </div>
     </div>
   </section> 
@@ -203,8 +206,6 @@
         var hiveAnimation = new Vivus('hive', {duration: 200, start: 'inViewport'});
         var outlineAnimation = new Vivus('outline', {duration: 200, start: 'inViewport'});
     </script>
-    
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     
     <script type="text/javascript">
     $(document).ready(function () {
