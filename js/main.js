@@ -1,11 +1,13 @@
-function hideNav() {
-	var x = document.getElementById('landing')
+$(window).scroll(function () {
+    console.log($(window).scrollTop());
+    var topDivHeight = $(".landing").height();
+    var viewPortSize = $(window).height();
+    
+    var triggerAt = 768;
+    var triggerHeight = (topDivHeight - viewPortSize) + triggerAt;
 
-	if (x = 'landing') {
-		document.getElementById('sidebar').style.display = 'none'
-	}
-	else {
-		document.getElementById('sidebar').style.display = 'block'
-	}
-
-}
+    if ($(window).scrollTop() >= triggerHeight) {
+        $('.bearimage').css('visibility', 'visible').hide().fadeIn();
+        $(this).off('scroll');
+    }
+});
