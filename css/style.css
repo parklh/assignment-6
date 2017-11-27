@@ -231,3 +231,172 @@ li {
 	background-size: cover;
 	height: 530px;
 }
+
+/*Responsive and adaptive  changes for mobile devices*/
+
+#top-nav {
+	display: flex;
+	align-items: center;
+	height: 50px;
+	width: 100%;
+  	position: fixed; /* Stay in place */
+  	z-index: 10; /* Stay on top */
+  	top: 0;
+  	left: 0;
+  	background-color: #FFF; /* Black*/
+  	border-bottom: 1px solid #666;
+  	/*overflow-x: hidden; Disable horizontal scroll */
+  	padding-top: 15px; /* Place content 60px from the top */
+  /*transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+#menu {
+	margin-left:15px;
+}
+
+.mobile-heading {
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	float: right;
+	margin-right: 15px;
+}
+
+#top-nav > ul {
+  position: relative;
+  display: block;
+  list-style: none;
+  padding-left: 30px;
+  left: -9999px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+#top-nav.open > ul{
+	background: #FFF;
+	border-bottom: 1px solid #666;
+  	visibility: visible;
+  	opacity: 1;
+  	left: 0;
+  	padding: 30px 0 0 15px;
+}
+
+#top-nav a{
+	color: #000;
+}
+
+#top-nav a:hover{
+	text-decoration: none;
+}
+
+@media (max-width:895px){
+	.shape {
+		width: 350px;
+	}
+}
+
+@media (min-width: 768px) {
+	#top-nav {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	h1 {
+		font-size: 35px;
+	}
+
+	h2 {
+		font-size: 24px;
+		line-height: 32px;
+		margin-top: 5px;
+	}
+
+	h3 {
+		font-size: 16px;
+	}
+
+	.landing {
+		background-image: linear-gradient(-180deg, #000000 0%, rgba(216,216,216,0.00) 67%), url("../images/landing-md.png");
+		background-size: fill;
+		display: flex;
+		flex-wrap: wrap;
+		vertical-align: center;
+	}
+
+	.heading {
+		text-align: center;
+		width: 100%;
+		margin-top: -160px;
+	}
+
+	.glasses-animation {
+		margin: 0 auto;
+		width: 75%;
+		overflow-x: visible;
+		margin-top: -430px;
+	}
+
+	#glasses {
+		width: 150%;
+		padding-right: 140px;
+	}
+
+	.bearfacts {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		height: auto;
+		margin-bottom: 140px;
+	}
+
+	.bearimage {
+	background-image: url("../images/placebear-md.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100vw;
+	height: 320px;
+	margin: 0 -15px 0 0;
+	position: relative;
+	}	
+ 	
+	.prints-animation {
+		position: absolute;
+		right:0;
+		bottom: -120px;
+	}
+
+ 	.content.facts {
+ 		margin: 0 auto;
+ 	}
+
+ 	.sidebar {
+  		display: none;
+  	}
+
+  	.location {
+  		display: flex;
+  		flex-direction: column;
+  		flex-wrap: wrap;
+  		height: auto;
+  		margin-bottom: 140px;
+  	}
+
+  	#map {
+		width: 100vw;
+		height: 320px;
+		z-index:1;
+		position: absolute;
+	}
+
+	.content.nobg {
+		z-index: 1;
+		margin-top: 320px;
+	}
+  
+  	#top-nav {
+  		display: block;
+  	}
+}
+

@@ -18,6 +18,18 @@
   </head>
 
 <body data-spy="scroll" data-target=".sidebar">
+<nav id="top-nav">
+  <div id="menu"><img src="images/menu.svg">
+      <div class="mobile-heading">THE SPECTACLED BEAR</div>
+  </div>
+  <ul>
+    <li><a href="#bearfacts">Bear Facts</a></li>
+    <li><a href="#location">Location</a></li>
+    <li><a href="#behavior-and-diet">Behavior & Diet</a></li>
+    <li><a href="#reproduction">Reproduction</a></li>
+    <li><a href="#conservation">Conservation</a></li>
+  </ul>
+</nav>
 <div class="site-container">
   <div class="container-fluid">
   <!--This is the main navigation-->
@@ -44,8 +56,8 @@
     <section id="landing">
      <div class="row">
         <div class="landing col-md-12">
-          <div class="heading col-md-4 offset-md-1">
-            <h1>The <BR>Spectacled <BR>Bear</h1>
+          <div class="heading col-sm-12 col-md-4 offset-md-1">
+            <h1>The Spectacled Bear</h1>
           </div>
           <div class="glasses-animation">
             <object id="glasses" type="image/svg+xml" data="images/glasses.svg"></object>
@@ -62,9 +74,9 @@
     <section id="bearfacts">
     <div class="row">
         <div class="bearfacts">
-          <div class="bearimage col-md-5 offset-md-1" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+          <div class="bearimage col-sm-12 col-md-5 offset-md-1" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
           </div>
-          <div class="content facts col-md-5" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+          <div class="content facts col-sm-12 col-md-5" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
             <h3>BEAR FACTS</h3>
             <div class="dash"></div>
             <div class="section-heading">
@@ -133,11 +145,11 @@
           <p>Intensely shy bears, they prefer the lush, isolated cloud forests on the slopes of the Andes, climbing as high as 14,000 feet. They will descend to search for food though, and have been seen in widely differing habitats, from rain forests, to steppe lands, to coastal deserts.
           <br>
           <br>
-          Spectacled bears are generally nocturnal and are primarily vegetarian, harvesting fruit, berries, cacti, and honey. Highly agile climbers, they have been known to sit in a tree for days on a platform made of broken branches, waiting for fruit to ripen. They have extremely strong jaws and wide, flat molars to chew tough vegetation such as tree bark and orchid bulbs. Occasionally they will supplement their diet with meat, taking small rodents, birds, insects, and even small cows, making them the largest carnivores in South America.</p>
+          Spectacled bears are generally nocturnal and are primarily vegetarian, harvesting fruit, berries, cacti, and honey. Highly agile climbers, they have been known to sit in a tree for days, waiting for fruit to ripen. They have extremely strong jaws and wide, flat molars to chew tough tree bark and orchid bulbs. Occasionally they will supplement their diet with meat, taking small rodents, birds, insects, and even small cows, making them the largest carnivores in South America.</p>
           </div>
         </div>
-        <div class="bearimage2 col-md-4 offset-md-2" data-aos="fade-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-        <img src="images/bear-hive.png"/>
+        <div class="bearimage2 col-md-4 offset-md-1" data-aos="fade-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+        <img class="shape" src="images/bear-hive.png"/>
         </div>
       </div>
     </div>
@@ -214,6 +226,29 @@
         AOS.refreshHard();  //optional
     });
     </script>
+
+    <script>
+    function openNav() {
+      document.getElementById("top-nav")
+    }
+
+    function closeNav() {
+      document.getElementById("top-nav")
+    }
+
+    $('#menu').click(function(){
+        if ($(this).hasClass('open')) {
+            closeNav();
+            $(this).removeClass('open');
+            $('#top-nav').removeClass('open');
+        } else {
+            openNav();
+            $(this).addClass('open');
+            $('#top-nav').addClass('open');
+        }
+
+    });
+  </script>
 
   </body>
 </html>
