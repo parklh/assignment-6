@@ -193,6 +193,14 @@ li {
 	z-index: 1;
 }
 
+.bearimage2 {
+	background-image: url("../images/bear-hive.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 496px;
+	position: relative;
+}
+
 .reproduction {
 	display: flex;
 	align-items: flex-end;
@@ -291,7 +299,10 @@ li {
 }
 
 @media (max-width:895px){
-	.shape {
+	h2 {
+		font-size: 30px;
+	}
+	.bearimage2 {
 		width: 350px;
 	}
 }
@@ -375,28 +386,71 @@ li {
   		display: none;
   	}
 
-  	.location {
-  		display: flex;
-  		flex-direction: column;
-  		flex-wrap: wrap;
+/*  	.location {
   		height: auto;
-  		margin-bottom: 140px;
-  	}
+  		margin-bottom: 40px;
+  	}*/
 
   	#map {
 		width: 100vw;
-		height: 320px;
-		z-index:1;
+		height: 100vh;
 		position: absolute;
 	}
 
 	.content.nobg {
 		z-index: 1;
-		margin-top: 320px;
+		width: 50%;
+	}
+
+	.behavior-and-diet{
+		display:flex;
+		flex-wrap: wrap;
+		margin-bottom: 200px;
+	}
+
+	.bearimage2 {
+		background-image: url("../images/hive-md.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100vw;
+		height: 320px;
+		margin: 0 -15px 0 0;
+		position: relative;
+	}
+
+	.hive-animation {
+		align-self: flex-end;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+
+	#hive {
+		width: 100%;
+	}
+
+	.reproduction {
+		margin-top: 30px;
+		background-image: linear-gradient(0deg, #000000 0%, rgba(216,216,216,0.00) 51%), url("../images/bearcub.png");
+		background-attachment: scroll;
+		background-position: bottom;
+		color: #FFF;
+	}
+
+	#outline {
+		width:50%;
 	}
   
   	#top-nav {
   		display: block;
   	}
+
+
+
+ /*Flexbox displau*/
+  .bearimage2 		 { order: 1; }
+  .content.behavior  { order: 2; } 
+  .hive-animation    { order: 3; }
 }
+
 
