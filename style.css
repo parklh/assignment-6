@@ -1,0 +1,233 @@
+html,
+body {
+ 	height:100%;
+ 	margin: 0;
+ 	background-color: #fff;
+ 	color: #000;
+ 	font-family: 'Poppins', sans-serif;
+ 	font-weight: 400;
+ 	font-size: 14px;
+ 	line-height: 23px;
+}
+
+h1 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 60px;
+	line-height: 75px;
+	color: #fff;
+	margin: 0;
+}
+
+h2 {
+	font-family:'Abril Fatface', sans-serif;
+	font-size: 48px;
+}
+
+h3 {
+	font-family:'Poppins', sans-serif;
+	font-size: 18px;
+	font-weight:700;
+}
+
+p {
+	font-family:'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+li {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.navbar {
+	margin-left:-15px;
+}
+
+.site-container {
+	width: 100%;
+	margin: 0;
+}
+
+.container-fluid {
+	float: right;
+	margin: 0;
+}
+
+.sidebar {
+	display: flex;
+	align-items: center;
+	position: fixed;
+	z-index: 10;
+	width:85px;
+	height: 100%;
+}
+
+.sidebar ul li.active {
+	border-left: 2px solid #000;
+}
+
+.landing {
+	display: flex;
+	align-items: center;
+	background-image: url("images/landing-bear.png");
+	z-index: 10;
+	height:100vh;
+	margin: 0;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.heading {
+	width: 300px;
+	align-items: center;
+	float: right;
+	padding: 0;
+}
+
+.glasses-animation {
+	overflow-x: hidden;
+	float: right;
+	margin: -200px -15px 0 100px;
+}
+
+.scroll {
+	width: 100%;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	text-align: center;
+	color: #FFF;
+}
+
+.bearfacts {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	background-color: #FFF;
+	position: relative;
+}
+
+.bearimage {
+	background-image: url("images/placebear.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 530px;
+	position: relative;
+}
+
+.content {
+	background-color: #FFF;
+	padding-top:15px;
+}
+
+.content.facts {
+	margin: 140px 0 30px -60px;
+}
+
+.prints-animation {
+	align-self: flex-end;
+	overflow-x:hidden;
+	margin: 0 -15px 30px 0;
+}
+
+.dash {
+	width: 30px;
+	height: 2px;
+	background: #000;
+}
+
+.dash.white {
+	background: #FFF;
+}
+
+.bold {
+	font-weight: 700;
+	margin-right:10px;
+}
+
+.copy {
+	background-color: #fff;
+	z-index:1;
+}
+
+#map {
+	width: 100vw;
+	height: 100vh;
+	z-index:0;
+	position: absolute;
+}
+
+.location {
+	display: flex;
+	align-items: center;
+	z-index: 1;
+	width: 100%;
+	height: 100vh;
+	background-color: #FFF;
+	position: relative;
+}
+
+.content.nobg {
+	background-color: transparent;
+}
+
+.behavior-and-diet {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	background-color: #FFF;
+	position: relative;
+}
+
+.hive-animation {
+	z-index:0;
+	position: absolute;
+	right:0;
+}
+
+.content.behavior {
+	z-index: 1;
+}
+
+.reproduction {
+	display: flex;
+	align-items: flex-end;
+	height: 100vh;
+	background-color: #FFF;
+	position: relative;	
+	background-image: linear-gradient(133deg, rgba(0,0,0,0.00) 35%, #000000 100%), url("images/bearcub.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	color: #FFF;
+}
+
+.content.cubs {
+	margin-bottom: 60px;
+	background-color: transparent;
+}
+
+.conservation {
+	display:flex;
+	background-color: #FFF;
+	position: relative;
+	z-index: 0;
+}
+
+.outline-animation {
+	z-index:1;
+	position: absolute; 
+}
+
+.andesimage {
+	background-image: url("images/andes.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 530px;
+}
