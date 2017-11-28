@@ -131,7 +131,7 @@ li {
 .prints-animation {
 	align-self: flex-end;
 	overflow-x:hidden;
-	margin: 0 -15px 30px 0;
+	margin: 0 0 30px 0;
 }
 
 .dash {
@@ -155,7 +155,7 @@ li {
 }
 
 #map {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	z-index:0;
 	position: absolute;
@@ -345,7 +345,6 @@ li {
 	.glasses-animation {
 		margin: 0 auto;
 		width: 100%;
-		overflow-x: visible;
 		margin-top: -260px;
 	}
 
@@ -366,15 +365,14 @@ li {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 100vw;
+	width: 100%;
 	height: 320px;
-	margin: 0 -15px 0 0;
 	position: relative;
 	}	
  	
 	.prints-animation {
 		margin:0 auto;
-		margin-left: 100px;
+		margin-left: 120px;
 	}
 
 	#prints {
@@ -390,7 +388,7 @@ li {
   	}
 
   	#map {
-		width: 100vw;
+		width: 100%;
 		height: 100vh;
 		position: absolute;
 	}
@@ -411,9 +409,8 @@ li {
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
-		width: 100vw;
+		width: 100%;
 		height: 320px;
-		margin: 0 -15px 0 0;
 		position: relative;
 	}
 
@@ -436,6 +433,26 @@ li {
 		color: #FFF;
 	}
 
+	.conservation {
+		display: flex;
+		flex-wrap:wrap;
+		height: auto;
+	}
+
+	.andesimage {
+	background-image: url("../images/andes-md.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 320px;
+	}	
+
+	.outline-animation{
+		padding:0;
+		position: relative;
+	}
+
 	#outline {
 		width:50%;
 	}
@@ -446,10 +463,14 @@ li {
 
 
 
- /*Flexbox displau*/
+ /*Flexbox display*/
   .bearimage2 		 { order: 1; }
   .content.behavior  { order: 2; } 
   .hive-animation    { order: 3; }
+  .andesimage		 { order: 4; }
+  .content 			 { order: 5; }
+  .outline-animation { order: 6; }
+  .prints-animation{ order: 7; }
 }
 
 
