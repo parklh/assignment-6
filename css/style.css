@@ -347,6 +347,7 @@ li {
 
 	.landing {
 		background-image: url("../images/landing-sm.jpg");
+		height:640px;
 		display: flex;
 		flex-wrap: wrap;
 	}
