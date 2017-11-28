@@ -296,7 +296,7 @@ li {
 	text-decoration: none;
 }
 
-/*Responsive and adaptive changes*/
+/*Responsive and adpative*/
 
 @media (max-width:895px){
 	h2 {
@@ -346,8 +346,9 @@ li {
 	}
 
 	.landing {
-		background-image: url("../images/landing-sm.jpg");
-		height:640px;
+		background-image: linear-gradient(-180deg, #000000 0%, rgba(216,216,216,0.00) 67%), url("../images/landing-md.jpg");
+		background-size: contain;
+		background-position: center;
 		display: flex;
 		flex-wrap: wrap;
 	}
