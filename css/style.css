@@ -346,8 +346,8 @@ li {
 	}
 
 	.landing {
-		background-image: /*linear-gradient(-180deg, #000000 0%, rgba(216,216,216,0.00) 67%)*/, url("../images/landing-md.png");
-		background-size: contain;
+		background-image: linear-gradient(-180deg, #000000 0%, rgba(216,216,216,0.00) 67%), url("../images/landing-md.jpg");
+		background-size: cover;
 		background-position: center;
 		display: flex;
 		flex-wrap: wrap;
