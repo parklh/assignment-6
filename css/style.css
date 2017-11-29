@@ -315,6 +315,12 @@ li {
 	}
 }
 
+@media (width: 800px){
+	.content.behavior {
+		width: 335px;
+	}
+}
+
 @media (max-width:895px){
 	h2 {
 		font-size: 30px;
