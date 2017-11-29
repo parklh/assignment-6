@@ -342,6 +342,12 @@ li {
 	}
 }
 
+@media (width: 320px) {
+	#top-nav {
+		width: 320px;
+	}
+}
+
 @media (max-width: 767px) {
 
 	h1 {
