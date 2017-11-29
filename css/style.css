@@ -308,6 +308,13 @@ li {
 
 /*Responsive and adpative*/
 
+@media (max-width: 767px) {
+	body {
+		width:100%;
+		overflow-x: hidden;
+	}
+}
+
 @media (max-width:895px){
 	h2 {
 		font-size: 30px;
@@ -325,21 +332,17 @@ li {
 
 @media (width: 375px) {
 	#top-nav {
-		width: 100%;
+		width: 375px;
 	}
 }
 
 @media (width: 360px) {
 	#top-nav {
-		width: 100%;
+		width: 360px;
 	}
 }
 
-
 @media (max-width: 767px) {
-	body {
-		overflow-x: hidden;
-	}
 
 	h1 {
 		font-size: 35px;
