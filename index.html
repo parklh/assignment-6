@@ -251,8 +251,13 @@
             $(this).addClass('open');
             $('#top-nav').addClass('open');
         }
-
     });
+    
+    $("#top-nav li a").click(function(event) {
+      closeNav();
+      $(this).removeClass('open');
+      $('#top-nav').removeClass('open');
+      });
   </script>
   </body>
 </html>
