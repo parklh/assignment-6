@@ -19,6 +19,8 @@
   </head>
 
 <body data-spy="scroll" data-target=".sidebar">
+
+<!--Mobile navigation-->  
 <nav id="top-nav">
   <div id="menu"><img src="images/menu.svg">
       <div class="mobile-heading">THE SPECTACLED BEAR</div>
@@ -33,7 +35,7 @@
 </nav>
 <div class="site-container">
   <div class="container-fluid">
-  <!--This is the main navigation-->
+  <!--This is the desktop navigation-->
     <nav class="sidebar">
       <ul class="navbar">
         <li class="nav-item">
@@ -54,6 +56,7 @@
       </ul>                  
     </nav>
 
+<!--Intro hero image-->
     <section id="landing">
      <div class="row">
         <div class="landing col-md-12">
@@ -72,6 +75,7 @@
     </div>
   </section>
 
+<!--Informational content about bear starts here-->
     <section id="bearfacts">
     <div class="row">
         <div class="bearfacts">
@@ -219,13 +223,15 @@
         var outlineAnimation = new Vivus('outline', {duration: 200, start: 'inViewport'});
     </script>
     
+    <!--Triggers div animations-->
     <script type="text/javascript">
     $(document).ready(function () {
         AOS.init();
-        AOS.refreshHard();  //optional
+        AOS.refreshHard();
     });
     </script>
 
+    <!--Function for mobile nav-->
     <script>
     function openNav() {
       document.getElementById("top-nav")
@@ -248,6 +254,22 @@
 
     });
   </script>
-
   </body>
 </html>
+
+<!--Resources: Images
+• http://www.fondationensemble.org/wp-content/uploads/2016/09/DSC_02491.jpg
+• https://cbsnewyork.files.wordpress.com/2017/05/
+• megan-maher_4406_andean-bear-cub_qz_05-01-17.jpg?w=640&h=0&crop=1
+• https://www.maquipucuna.org/?lightbox=dataItem-j4r8xdig1
+• http://www.blueworldjourneys.com/images/Itineraries/Ecuador-And-The-Galapagos/Quito-The-Andes-And-5-Day-Galapagos-Cruise/Day5.jpg
+-->
+<!--Resources: Icons
+• http://fontawesome.io
+• https://thenounproject.com/search/?q=meat&i=1349350
+• https://thenounproject.com/search/?q=heart&i=883734
+-->
+<!--Resources: Content
+• hhttps://www.nationalgeographic.com/animals/mammals/s/spectacled-bear/
+-->
+
